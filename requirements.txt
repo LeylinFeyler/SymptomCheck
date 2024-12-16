@@ -1,0 +1,27 @@
+Flask                # Фреймворк для веб-застосунків  # Або 2.0.1
+Flask-SQLAlchemy    # ORM для роботи з базою даних
+Flask-Migrate       # Міграції бази даних
+Flask-Login         # Система авторизації користувачів
+Flask-WTF           # Підтримка форм і CSRF-захист
+Flask-Dance         # Для інтеграції Google OAuth
+Flask-Limiter
+psycopg2-binary      # Драйвер PostgreSQL
+bleach             # Для екранування введення користувачів
+Werkzeug             # Базова бібліотека для роботи Flask
+gunicorn            # WSGI-сервер для деплоя
+Jinja2               # Шаблонізатор Flask
+python-dotenv        # Завантаження змінних середовища
+
+
+
+
+
+
+
+
+
+
+
+
+
+
