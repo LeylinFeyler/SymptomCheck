@@ -1,0 +1,187 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    width: 98%;
+}
+
+#chatbox {
+    width: 500px;
+    height: 750px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#chatlogs {
+    height: 650px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user, .bot {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    white-space: pre-line;
+}
+
+.user {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    margin-left: auto; /* Вирівнює повідомлення користувача праворуч */
+}
+
+.bot {
+    align-self: flex-start;
+    background-color: #e6e6e6;
+    margin-right: auto; /* Вирівнює повідомлення бота ліворуч */
+}
+
+#chatinput {
+    display: flex;
+}
+
+#inputbox {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    resize: none; /* Забороняє користувачеві змінювати розмір */
+    overflow: hidden; /* Прибирає прокручування */
+}
+
+#sendbutton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#signInBtn, #signOutBtn {
+    background-color: #4CAF50; /* Зелений колір */
+    color: white; /* Білий текст */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    /* font-size: 0.9em; */
+    text-align: center;
+}
+
+/* Стиль при наведенні */
+#sendbutton:hover, #signInBtn:hover, #signOutBtn:hover {
+    background-color: #45a049; /* Трохи темніший зелений */
+}
+
+#clearChatButton {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcccc;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+#clearChatButton:hover {
+    background-color: #ff9999;
+}
+
+#assistant-container {
+    display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+background-color: #f2f2f2;
+width: 100%; /* Ширина на всю сторінку */
+position: relative; /* Дозволяє використовувати позиціонування для кнопки */
+}
+
+#assistant {
+    font-size: 3em;
+text-align: center;
+flex-grow: 1; /* Дозволяє заголовку займати центральне місце */
+}
+
+#authButtons {
+    /* display: flex;
+    gap: 10px; */
+    position: absolute;
+right: 20px; /* Вирівнює кнопки по правій стороні з відступом */
+text-align: center;
+}
+
+#signInBtn, #signOutBtn {
+/* margin-left: 20px; */
+margin-top: 5px;
+width: 100%;
+display: flex;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+}
+
+.bot-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Додаткові стилі для вирівнювання кнопок */
+#userButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+
+#userAvatar {
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 95px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для кнопки виходу в меню */
+#dropdownMenu button {
+    background-color: #4CAF50; /* Зелений колір */
+    color: white; /* Білий текст */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    /* font-size: 1em; */
+}
+
+#dropdownMenu button:hover {
+    background-color: #45a049; /* Трохи темніший зелений */
+}
